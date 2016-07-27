@@ -1,6 +1,5 @@
-# hdt3
-Hoja de Trabajo 3
-Meta- Comparar la complejidad de tiempo de corrida de: Insertion sort, Bubble sort, Merge sort y Quick sort.
+# Hoja de Trabajo 3
+Meta - Comparar la complejidad de tiempo de corrida de: Insertion sort, Bubble sort, Merge sort y Quick sort.
 
 Asignacion
 ----------
