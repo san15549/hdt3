@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 /**
  * @author Jose Martinez, David Sanchinelli, Juan Pablo Zea, Diego Hurtarte
  * @version 31/07/16
@@ -38,3 +40,10 @@ public class Sort implements iSort {
     public int[] quickSort() {
         throw new UnsupportedOperationException("Not supported yet.");
     }
+
+    @Override
+    public String toString() {
+        return "\nEl arreglo se ha ordenado:\n" + Arrays.toString(lista);
+    }
+    
+}
