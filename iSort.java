@@ -7,6 +7,6 @@ public interface iSort {
     public int[] insertionSort();
     public int[] bubbleSort();
     public int[] mergeSort();
-    public int[] quickSort(int arrgelo[]);
+    public int[] quickSort();
     
 }
