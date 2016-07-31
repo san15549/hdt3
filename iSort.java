@@ -2,7 +2,7 @@
  * @author Jose Martinez, David Sanchinelli, Juan Pablo Zea, Diego Hurtarte
  * @version 31/07/16
  */
-public interface SortInterface {
+public interface iSort {
     
     public int[] insertionSort();
     public int[] bubbleSort();
