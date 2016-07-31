@@ -6,19 +6,20 @@
 
 public class MergeSort extends iSort{
     private MergeSort(Comparable lista[]){
-        MergeSortRecursive(lista, new Comparable [lista.length], 0 , (lista.length)-1);
-    }    
-    private void MergeSortRecursive (Comparable t[],int b, int a, Comparable[] lista){
+         MergeSortRecursive(lista,new Comparable[lista.length],0,lista.length-1);
+    }
+    private void MergeSortRecursive(Comparable t[],int b, int a, Comparable[] lista){
         
-        /* Se hara un promedio restando el mas bajo y el mas alto*/
+        /* Se hara un promedio restando el mas bajo y el mas alto "pro"*/
+        /*Luego se hara se partira a la mitad con el promedio y el mas bajo partido en dos "par"*/
         int pro = (b-a-1)*(-1);
         int i;
         int par = (1/2)*(pro + b);
         if (2>pro) return;
         
-        for(i<par; i=b; (i + 1)){
-            lista[i]=t[i];
-        }
+      for(i=b;i<par;i++){
+          t[i]=lista[i];
+      }
         MergeSortRecursive(lista,par-1,b);
         MergeS(lista, par, b, a);
         MergeSortRecursive(lista, par,a);
@@ -28,11 +29,11 @@ public class MergeSort extends iSort{
             int bb = b;
             int parpar = par;
             int bbb = b;
-            
+            /*Se creara un ciclo para recorrerlo*/
             while(a>parpar && par>bbb){
                 
             }
             while(par>bbb)
                 t[bbb + 1]=lista[1+bb];
     }
-} 
+}
