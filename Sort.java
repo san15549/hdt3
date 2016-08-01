@@ -16,7 +16,36 @@ public class Sort implements iSort {
     
     @Override
     public int[] insertionSort() {
-        throw new UnsupportedOperationException("Not supported yet.");
+        
+        int[] arrayParaOrdenar = lista;
+        int largo = arrayParaOrdenar.length;
+        int[] arrayOrdenado = new int[largo];
+        int i = 0;
+        
+        while(i < largo){
+            int iResta = 0;
+            int n1 = arrayParaOrdenar[i];
+            
+            while(iResta < largo){
+                int n2 = arrayParaOrdenar[iResta];
+                
+                int nr = n1 - n2;
+                if (nr < 0){
+                    iResta++;
+                } else {
+                    iResta = largo + 1;
+                }
+                
+                if (iResta == largo){
+                    arrayOrdenado[i] = n1;
+                    arrayParaOrdenar[i] = 0;
+                    i++;
+                }
+            }
+        }
+                
+        
+        return arrayOrdenado;
     }
 
     @Override
