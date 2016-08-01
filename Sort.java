@@ -7,6 +7,7 @@ import java.util.Arrays;
  * JorgeP.(2010). Ordenacion Rapida - Quick Sort. http://jorgep.blogspot.com/2010/09/ordenacion-rapida-quick-sort.html [29/07/2016]
  * Archer, Jon, et. al. (2009). QuickSort. http://www.algolist.net/Algorithms/Sorting/Quicksort [30/07/2016]
  * Lars V. (2012). Merge Sort Java Tutorial. http://www.vogella.com/tutorials/JavaAlgorithmsMergesort/article.html [31/07/2016]
+ * Tanimoto, C. (2001). Performance Measurement. http://courses.cs.washington.edu/courses/cse373/01wi/slides/Measurement/sld010.htm [31/07/2016]
  */
 public class Sort implements iSort {
 
@@ -18,36 +19,19 @@ public class Sort implements iSort {
     
     @Override
     public int[] insertionSort() {
+        int[] arrayOrdenar = lista;
         
-        int[] arrayParaOrdenar = lista;
-        int largo = arrayParaOrdenar.length;
-        int[] arrayOrdenado = new int[largo];
-        int i = 0;
-        
-        while(i < largo){
-            int iResta = 0;
-            int n1 = arrayParaOrdenar[i];
-            
-            while(iResta < largo){
-                int n2 = arrayParaOrdenar[iResta];
-                
-                int nr = n1 - n2;
-                if (nr < 0){
-                    iResta++;
-                } else {
-                    iResta = largo + 1;
-                }
-                
-                if (iResta == largo){
-                    arrayOrdenado[i] = n1;
-                    arrayParaOrdenar[i] = 0;
-                    i++;
-                }
-            }
+       for (int i = 1; i < arrayOrdenar.length; i++){
+            int temp = arrayOrdenar[i];
+            int j;
+            for (j = i - 1; j >= 0 && temp < arrayOrdenar[j] ; j--){
+                arrayOrdenar[j + 1] = arrayOrdenar[j];
         }
-                
+            arrayOrdenar[j + 1] = temp;
+        }
         
-        return arrayOrdenado;
+        return arrayOrdenar;
+                
     }
 
     @Override
