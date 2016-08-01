@@ -5,6 +5,7 @@ import java.util.Arrays;
  * @version 31/07/16
  * Referencias: 
  * JorgeP.(2010). Ordenacion Rapida - Quick Sort. http://jorgep.blogspot.com/2010/09/ordenacion-rapida-quick-sort.html [29/07/2016]
+ * Archer, Jon, et. al. (2009). QuickSort. http://www.algolist.net/Algorithms/Sorting/Quicksort [30/07/2016]
  * Lars V. (2012). Merge Sort Java Tutorial. http://www.vogella.com/tutorials/JavaAlgorithmsMergesort/article.html [31/07/2016]
  */
 public class Sort implements iSort {
