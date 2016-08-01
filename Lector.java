@@ -4,7 +4,9 @@ import java.io.FileReader;
 import java.io.IOException;
 /**
  * @author Carlo David Sanchinelli, Diego Alberto Hurtarte
- * @version 31.07.16
+ * @version 24.07.16
+ * Referencias:
+ * Char Array to Int Array: http://stackoverflow.com/questions/10886068/char-array-to-int-array
  */
 public class Lector {
     BufferedReader br;
