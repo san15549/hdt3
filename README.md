@@ -3,7 +3,7 @@ Meta - Comparar la complejidad de tiempo de corrida de: Insertion sort, Bubble s
 
 Asignacion
 ----------
-Insertion = Peps, Bubble = David(TERMINADO), Merge = Zea(TERMINADO), Quick = Hurt
+Insertion = Peps, Bubble = David(TERMINADO), Merge = Zea, Quick = Hurt(TERMINADO)
 
 Programa
 ----------
