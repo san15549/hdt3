@@ -143,7 +143,7 @@ public class Sort implements iSort {
 
     @Override
     public String toString() {
-        return "\nEl arreglo se ha ordenado:\n" + Arrays.toString(lista);
+        return Arrays.toString(lista);
     }
     
 }
