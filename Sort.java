@@ -68,21 +68,20 @@ public class Sort implements iSort {
     public int[] mergeSort(int[] lista){
    
     int i = 0;
-    
-    int[] p = new int[lista.length * (1 / 2)];
+    int[] p = new int[lista.length /2];
     int[] s = new int[lista.length - p.length];
     
-        mergeSort(p);
-        mergeSort(s);
+    mergeSort(p);
+    mergeSort(s);
     
-        System.arraycopy(lista, 0, p, 0, p.length);
-        System.arraycopy(lista, p.length, s, 0, s.length);
+    System.arraycopy(lista, 0, p, 0, p.length);
+    System.arraycopy(lista, p.length, s, 0, s.length);
    
-            merge(p,s,lista);
-            return lista;
+    merge(p,s,lista);
+    return lista;
     }
     
-    private static void merge(int[] p, int[] s, int [] fin) {
+    private static void merge(int[] p, int[] s, int[] fin) {
 
         int pp = 0;
         int ss = 0;
@@ -90,7 +89,7 @@ public class Sort implements iSort {
 
         while (pp < p.length && ss < s.length) 
         {
-            if (p[pp] < s[ss]) 
+            if (p[pp] <= s[ss])
             {
                 fin[r] = p[pp];
                 pp++;
@@ -99,10 +98,10 @@ public class Sort implements iSort {
                 fin[r] = s[ss];
                 ss++;
             }
-                r++;
+            r++;
         }
-            System.arraycopy(p, pp, fin, r, p.length - pp);
-            System.arraycopy(s, ss, fin, r, s.length - ss);
+        System.arraycopy(p, pp, fin, r, p.length - pp);
+        System.arraycopy(s, ss, fin, r, s.length - ss);
     }
 
     @Override
