@@ -66,7 +66,7 @@ public class Sort implements iSort {
 
     @Override
     public int[] mergeSort(int[] lista){
-   
+    /*Problemas con MergeSort, sin encontrar el error, por más que corre en una computadora bien y en las otras no*/   
     int i = 0;
     int[] p = new int[lista.length /2];
     int[] s = new int[lista.length - p.length];
